@@ -1,12 +1,28 @@
 {
   "name": "md-links",
   "version": "0.1.0",
+  "description": "Herramienta que lee y analiza archivos con formato Markdown, para verificar los links que contengan y reportar algunas estadísticas",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Maria Camila",
+  "license": "ISC",
+  "bin": {
+    "md-links": "./index.js"
+  },
   "dependencies": {
+    "axios": "^0.23.0",
+    "chalk": "^4.1.2",
     "colors": "^1.4.0",
+    "commander": "^8.3.0",
+    "figlet": "^1.5.2",
     "latest-version": "^6.0.0",
-    "markdown-link-extractor": "^1.3.0"
+    "markdown-link-extractor": "^1.3.0",
+    "marked": "^2.1.3"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "jest": "^27.3.1"
   }
 }
